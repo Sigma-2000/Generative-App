@@ -1,13 +1,13 @@
 const listAbsurd= ["j'ai vu tant de choses","que vous","humains","ne pourriez pas croire...","de grands navires","en feu","surgissant de l'épaule d'Orion",
 "j'ai vu des rayons fabuleux","des rayons C","briller dans l'ombre de la Porte","de Tannhaüser",
-"tous ces moments se perdront dans l'oubli","comme les larmes dans la pluie","il est temps de mourir","Avez-vous déjà désactivé","un humain par erreur",
+"tous ces moments se perdront dans l'oubli","comme les larmes dans la pluie","il est temps de mourir","avez-vous déjà désactivé","un humain par erreur",
 "les cons ça ose tout","c'est même à ça qu'on les reconnaît","quand le dernier arbre sera abattu","la dernière rivière empoisonnée",
 "le dernier poisson capturé"," alors l'homme s'apercevra", "que l'argent ne se mange pas", "ce qui est créé par l’esprit","est plus vivant que la matière",
-"sois sage,ô ma douleur","et tiens-toi plus tranquille","Il faut être toujours ivre", "pour ne pas sentir", "l'horrible fardeau du temps", "de vin",
+"sois sage,ô ma douleur","et tiens-toi plus tranquille","il faut être toujours ivre", "pour ne pas sentir", "l'horrible fardeau du temps", "de vin",
 "qui brise vos épaules","il faut s’enivrer sans trêve","de poésie","ou de vertu","à votre guise","mais enivrez-vous",
 "imaginez","pouvoir voler","depuis l’espace","jusqu’à n’importe quel endroit","sur Terre","le type de personne", "le plus dangereux …",
 "est celui qui a peur","de sa propre ombre","la seule vérité","c’est qu’il n’y a pas de vérité","le futur est déjà là",
-"il est juste inégalement réparti", "Les choses électriques","ont aussi leur vie","aussi dérisoires","que soient ces vies",
+"il est juste inégalement réparti", "les choses électriques","ont aussi leur vie","aussi dérisoires","que soient ces vies",
 "le pinceau","est la canne blanche","du peintre","qui cherche à avancer",
  ];
 
