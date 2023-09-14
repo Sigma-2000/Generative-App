@@ -119,10 +119,6 @@ footer {
 }
 
 
-.zoneSaisie {
-    width: 20%;
-    margin-bottom: 10px;
-}
 .zoneProposition {
     width: 70%;
     height: 300px; /* Vous pouvez ajuster la hauteur selon vos besoins */
@@ -132,7 +128,9 @@ footer {
     justify-content: center;
     align-items: center;
 }
+
 .zonePartage {
+    width: 20%;
     padding-top: 20px;
 }
 
