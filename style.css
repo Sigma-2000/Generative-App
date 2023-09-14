@@ -1,0 +1,160 @@
+/**
+ * Reset
+ */
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    --color-primary: #3e2eae;
+    --color-secondary: #6597ed;
+    --color-tertiary: #f0efc0;    
+}
+
+h1 {
+    margin: 10px;
+    font-size: 60px;
+    font-weight: 900;
+    color: var(--color-primary);
+}
+
+h2 {
+    margin: 10px;
+    font-size: 30px;
+    font-weight: 600;
+    color: white;
+}
+
+h3 {
+    margin: 10px;
+    font-size: 17px;
+    font-weight: 500;
+    color: white;
+}
+
+input[type='radio'] {
+    filter: grayscale(1); /* Grayscale passe le bouton en niveau de gris */
+}
+
+button {
+    padding: 5px;
+    border: none;
+    border-radius: 8px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 17px;
+    color: var(--color-secondary);
+    background-color: white;
+}
+
+button:hover {
+    color: var(--color-primary);
+    background-color: var(--color-tertiary);
+    cursor: pointer;
+}
+
+button:focus {
+    background-color: var(--color-tertiary);
+    border: 3px solid var(--color-primary);
+    padding: 2px;
+    
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif; 
+    background: linear-gradient(#6597ed,#F1E089);;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    min-width: 200px;
+    margin-bottom: 50px;
+    padding: 50px;
+    text-align: center;
+    color:var(--color-secondary);
+    font-size: 17px;
+    font-weight: 500;
+    border-radius: 30px;
+    background: linear-gradient(#F1E089,#6597ed);
+}
+
+
+footer {
+    
+    bottom: 0;
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 30px;
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--color-secondary);
+    
+}
+
+.optionSource {
+    margin: 20px;
+}
+
+.optionSource input[type='radio']:not(:first-child) {
+    margin-left: 20px;
+}
+
+
+.zoneSaisie {
+    width: 20%;
+    margin-bottom: 10px;
+}
+.zoneProposition {
+    width: 70%;
+    height: 300px; /* Vous pouvez ajuster la hauteur selon vos besoins */
+    background-color: white; /* Couleur de fond pour la zone vide */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.zonePartage {
+    padding-top: 20px;
+}
+
+
+/** 
+ * Responsive
+ */
+
+
+ /* En dessous de 1200 px */
+ @media screen and (max-width: 1200px) {
+    main {
+        width: 60%;
+        padding: 30px;
+    }
+}
+
+
+/* En dessous de 800 px */
+@media screen and (max-width: 800px) {
+    main {
+        width: 90%;
+        padding: 10px;
+    }
+}
