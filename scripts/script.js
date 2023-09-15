@@ -15,6 +15,21 @@ function displayResult(citation){
     spanResult.innerText = citation;
 }
 
+
+function displayImg(listImg){
+    
+    let imageDisplay = document.getElementById("imageDisplay");
+
+    if(!imageDisplay){
+        let zoneProposition = document.querySelector(".zoneProposition");
+        imageDisplay= document.createElement("img");
+        imageDisplay.id = "imageDisplay";
+        zoneProposition.appendChild(imageDisplay); 
+    } 
+    imageDisplay.innerHTML = listImg;
+    imageDisplay.src = "images/"+ listImg;
+}
+
 function capitalizeFirstLetter(list) {
     for (let i = 0; i < list.length; i++) {
         if (typeof list[i] === 'string' && list[i].length > 0) {
@@ -24,10 +39,10 @@ function capitalizeFirstLetter(list) {
     return list;
 }
 
-   
 
 function startTheGame(){
-
+    //initialization
+    initAddEventListenerPopup()
     const capitalizeListAbsurd = [... listAbsurd];
     capitalizeFirstLetter(capitalizeListAbsurd);
 
@@ -38,9 +53,11 @@ function startTheGame(){
              if (event.target.value === "1") {
              
                 displayResult(`“${randomCitation(capitalizeListAbsurd)} ${randomCitation(listAbsurd)}, ${randomCitation(listAbsurd)}.”`);
-                
+                displayImg(randomCitation(listImg));
+                console.log(randomCitation(listImg));
             } else {
                 displayResult(randomCitation(listCitation)); 
+                displayImg(randomCitation(listImg));
                 
              }
              
