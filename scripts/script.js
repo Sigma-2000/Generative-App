@@ -99,21 +99,25 @@ function startTheApp(){
     const capitalizeListAbsurd = [... listAbsurd];
     capitalizeFirstLetter(capitalizeListAbsurd);
 
+    let btnValiderMot = document.getElementById("btnValiderMot");
+   
+
     let listeBtnRadio = document.querySelectorAll(".optionSource input")
      for (let index = 0; index < listeBtnRadio.length; index++) {
          listeBtnRadio[index].addEventListener("change", (event) => {
              // Si c'est le premier élément qui a été modifié, alors nous voulons générer de l'absurde 
              if (event.target.value === "1") {
-             
+                btnValiderMot.addEventListener("click", () => {
                 displayResult(`“${randomCitation(capitalizeListAbsurd)} ${randomCitation(listAbsurd)}, ${randomCitation(listAbsurd)}.”`);
                 displayImg(randomCitation(listImg));
-                console.log(randomCitation(listImg));
+            })   
             } else {
+                btnValiderMot.addEventListener("click", () => {
                 displayResult(randomCitation(listCitation)); 
                 displayImg(randomCitation(listImg));
-                
+            })    
              }
-             
+           
          })
      }
 
