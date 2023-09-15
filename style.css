@@ -10,7 +10,7 @@
 body {
     --color-primary: #3e2eae;
     --color-secondary: #6597ed;
-    --color-tertiary: #f0efc0;    
+    --color-tertiary: white;    
 }
 
 h1 {
@@ -24,14 +24,14 @@ h2 {
     margin: 10px;
     font-size: 30px;
     font-weight: 600;
-    color: white;
+    color: var(--color-secondary);
 }
 
 h3 {
     margin: 10px;
     font-size: 17px;
     font-weight: 500;
-    color: white;
+    color: var(--color-secondary);
 }
 
 input[type='radio'] {
@@ -46,7 +46,7 @@ button {
     font-weight: 600;
     font-size: 17px;
     color: var(--color-secondary);
-    background-color: white;
+    background-color: var(--color-tertiary);
 }
 
 button:hover {
@@ -70,7 +70,9 @@ body {
     align-items: center;
     min-height: 100vh;
     font-family: 'Roboto', sans-serif; 
-    background: linear-gradient(#6597ed,#F1E089);;
+    background-image: url("images/fond4.jpg");
+    background-size: cover;
+    
 }
 
 header {
@@ -89,11 +91,12 @@ main {
     margin-bottom: 50px;
     padding: 50px;
     text-align: center;
-    color:var(--color-secondary);
+    color:var(--color-primary);
     font-size: 17px;
     font-weight: 500;
     border-radius: 30px;
-    background: linear-gradient(#F1E089,#6597ed);
+    background: linear-gradient(#6597ed,#3e2eae);
+   
 }
 
 
@@ -122,7 +125,8 @@ footer {
 .zoneProposition {
     width: 70%;
     height: 300px; 
-    background-color: white; 
+    background-image: url("images/texture-du-papier.jpg");
+    background-size: cover;
     text-align: center;
     display: flex;
     justify-content: space-evenly;
@@ -162,7 +166,7 @@ img {
     width: 300px;
     padding: 20px;
     text-align: center;
-    color: white;
+    color:var(--color-tertiary);
     font-size: 17px;
     font-weight: 500;
     background-color: var(--color-primary);
