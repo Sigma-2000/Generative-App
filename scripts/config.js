@@ -29,5 +29,3 @@ const listCitation=["“J'ai vu tant de choses que vous humains, ne pourriez pas
 const listImg=["daragon.jpg","abattre-les-cauchemars.jpg", "arachneide.jpg","autoportrait-2017.jpg", 
 "envolée-lyrique-du-coeur-du-scaphandrier.jpg","flow-of-time.jpg","it-smells-like-summer.jpg","koi-carp-and-the-dead-samourai.jpg",
 "la-chaleur-s-evade-l-automne-fauche-et-roussit.jpg","minotaure.jpg","rencontre-dans-les-nebuleuses.jpg", "soufre-d-ete.jpg" ];
-//const imageDisplay = document.getElementById("imageDisplay");
-//imageDisplay.src = "images/"+ listImg;

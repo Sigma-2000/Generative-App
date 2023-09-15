@@ -1,1 +1,1 @@
-startTheGame();
+startTheApp();
