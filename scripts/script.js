@@ -15,7 +15,6 @@ function displayResult(citation){
     spanResult.innerText = citation;
 }
 
-
 function displayImg(listImg){
     
     let imageDisplay = document.getElementById("imageDisplay");
@@ -38,11 +37,11 @@ function capitalizeFirstLetter(list) {
     }
     return list;
 }
+
 function afficherEmail(nom, email, citation) {
     let mailto = `mailto:${email}?subject=Partage de citation via GenerateAPP&body=Salut, c'est ${nom} et je viens de générer cette citation: ${citation} sur le site Generate App !`
     location.href = mailto
 }
-
 
 function validerNom(nom){
     if (nom.length < 2){
@@ -50,7 +49,6 @@ function validerNom(nom){
     }
     return true;
 }
-
 
 function validerMail(email){
     let emailRegex = new RegExp("[a-z0-9._-]+@[a-z0-9._-]+\\.[a-z0-9._-]+"); //deux backslash car veut point !!
@@ -83,15 +81,12 @@ function gererFormulaire(citation){
         validerMail(email);
         afficherMessageErreur("");
         afficherEmail(email, nom, citation);
-
 }
     catch(erreur){
         console.log(erreur);
         afficherMessageErreur(erreur.message);
     }
-
 }
-
 
 function startTheApp(){
     //initialization
@@ -100,7 +95,6 @@ function startTheApp(){
     capitalizeFirstLetter(capitalizeListAbsurd);
 
     let btnValiderMot = document.getElementById("btnValiderMot");
-   
 
     let listeBtnRadio = document.querySelectorAll(".optionSource input")
      for (let index = 0; index < listeBtnRadio.length; index++) {
@@ -129,8 +123,6 @@ function startTheApp(){
             let citation = baliseCitation.innerHTML;  
             gererFormulaire(citation);
             console.log(citation)
-            
-            })
-           
+            })      
 }
 

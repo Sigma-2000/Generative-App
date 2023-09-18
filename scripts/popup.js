@@ -1,22 +1,14 @@
 function afficherPopup() {
     let popupBackground = document.querySelector(".popupBackground")
-    // La popup est masquée par défaut (display:none), ajouter la classe "active"
-    // va changer son display et la rendre visible. 
     popupBackground.classList.add("active")
 }
 
 function cacherPopup() {
-    let popupBackground = document.querySelector(".popupBackground")
-    // La popup est masquée par défaut (display:none), supprimer la classe "active"
-    // va rétablir cet affichage par défaut. 
+    let popupBackground = document.querySelector(".popupBackground") 
     popupBackground.classList.remove("active")
 }
 
 
-/**
- * Cette fonction initialise les écouteurs d'événements qui concernent 
- * l'affichage de la popup. 
- */
 function initAddEventListenerPopup() {
     // On écoute le click sur le bouton "partager"
     btnPartage = document.querySelector(".zonePartage button")
