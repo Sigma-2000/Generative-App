@@ -62,7 +62,6 @@ button:focus {
     
 }
 
-
 body {
     display: flex;
     flex-direction: column;
@@ -99,9 +98,7 @@ main {
    
 }
 
-
 footer {
-    
     bottom: 0;
     display: flex;
     justify-content: flex-start;
@@ -120,7 +117,6 @@ footer {
 .optionSource input[type='radio']:not(:first-child) {
     margin-left: 20px;
 }
-
 
 .zoneProposition {
     width: 70%;
@@ -181,8 +177,6 @@ img {
     z-index: 1;
 }
 
-
-
 .active {
     display: flex !important;
 }
@@ -206,7 +200,6 @@ img {
 .popup button {
     margin: 5px;
 }
-
 
 /** 
  * Responsive

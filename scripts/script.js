@@ -95,8 +95,15 @@ function startTheApp(){
     capitalizeFirstLetter(capitalizeListAbsurd);
 
     let btnValiderMot = document.getElementById("btnValiderMot");
+    let listeBtnRadio = document.querySelectorAll(".optionSource input");
+    
+    window.addEventListener("load", ()=>{
+        btnValiderMot.addEventListener("click", () => {
+            displayResult(`“${randomCitation(capitalizeListAbsurd)} ${randomCitation(listAbsurd)}, ${randomCitation(listAbsurd)}.”`);
+            displayImg(randomCitation(listImg));
+        }) 
+    })
 
-    let listeBtnRadio = document.querySelectorAll(".optionSource input")
      for (let index = 0; index < listeBtnRadio.length; index++) {
          listeBtnRadio[index].addEventListener("change", (event) => {
              // Si c'est le premier élément qui a été modifié, alors nous voulons générer de l'absurde 
